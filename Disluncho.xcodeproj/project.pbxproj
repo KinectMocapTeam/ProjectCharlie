@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28687796135695AC00011542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687795135695AC00011542 /* UIKit.framework */; };
+		28687798135695AC00011542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687797135695AC00011542 /* Foundation.framework */; };
+		2868779A135695AC00011542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687799135695AC00011542 /* CoreGraphics.framework */; };
+		286877A0135695AC00011542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2868779E135695AC00011542 /* InfoPlist.strings */; };
+		286877A3135695AC00011542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877A2135695AC00011542 /* main.m */; };
+		286877A6135695AC00011542 /* DislunchoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877A5135695AC00011542 /* DislunchoAppDelegate.m */; };
+		286877A9135695AC00011542 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877A7135695AC00011542 /* MainWindow.xib */; };
+		286877AC135695AC00011542 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877AB135695AC00011542 /* FirstViewController.m */; };
+		286877AF135695AC00011542 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877AE135695AC00011542 /* SecondViewController.m */; };
+		286877B2135695AC00011542 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877B0135695AC00011542 /* FirstView.xib */; };
+		286877B5135695AC00011542 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877B3135695AC00011542 /* SecondView.xib */; };
+		286877BC135695AC00011542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687795135695AC00011542 /* UIKit.framework */; };
+		286877BD135695AC00011542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687797135695AC00011542 /* Foundation.framework */; };
+		286877BE135695AC00011542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687799135695AC00011542 /* CoreGraphics.framework */; };
+		286877C6135695AC00011542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286877C4135695AC00011542 /* InfoPlist.strings */; };
+		286877C9135695AC00011542 /* DislunchoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 286877C8135695AC00011542 /* DislunchoTests.h */; };
+		286877CB135695AC00011542 /* DislunchoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877CA135695AC00011542 /* DislunchoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		286877BF135695AC00011542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28687788135695AC00011542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28687790135695AC00011542;
+			remoteInfo = Disluncho;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28687791135695AC00011542 /* Disluncho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disluncho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28687795135695AC00011542 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28687797135695AC00011542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28687799135695AC00011542 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2868779D135695AC00011542 /* Disluncho-Info.plist */ = {isa = PBXFileReference; path = "Disluncho-Info.plist"; sourceTree = "<group>"; };
+		2868779F135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		286877A1135695AC00011542 /* Disluncho-Prefix.pch */ = {isa = PBXFileReference; path = "Disluncho-Prefix.pch"; sourceTree = "<group>"; };
+		286877A2135695AC00011542 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		286877A4135695AC00011542 /* DislunchoAppDelegate.h */ = {isa = PBXFileReference; path = DislunchoAppDelegate.h; sourceTree = "<group>"; };
+		286877A5135695AC00011542 /* DislunchoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DislunchoAppDelegate.m; sourceTree = "<group>"; };
+		286877A8135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		286877AA135695AC00011542 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		286877AB135695AC00011542 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		286877AD135695AC00011542 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		286877AE135695AC00011542 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		286877B1135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		286877B4135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		286877BB135695AC00011542 /* DislunchoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DislunchoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		286877C3135695AC00011542 /* DislunchoTests-Info.plist */ = {isa = PBXFileReference; path = "DislunchoTests-Info.plist"; sourceTree = "<group>"; };
+		286877C5135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		286877C7135695AC00011542 /* DislunchoTests-Prefix.pch */ = {isa = PBXFileReference; path = "DislunchoTests-Prefix.pch"; sourceTree = "<group>"; };
+		286877C8135695AC00011542 /* DislunchoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DislunchoTests.h; sourceTree = "<group>"; };
+		286877CA135695AC00011542 /* DislunchoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DislunchoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2868778E135695AC00011542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28687796135695AC00011542 /* UIKit.framework in Frameworks */,
+				28687798135695AC00011542 /* Foundation.framework in Frameworks */,
+				2868779A135695AC00011542 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286877B7135695AC00011542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286877BC135695AC00011542 /* UIKit.framework in Frameworks */,
+				286877BD135695AC00011542 /* Foundation.framework in Frameworks */,
+				286877BE135695AC00011542 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28687786135695AC00011542 = {
+			isa = PBXGroup;
+			children = (
+				2868779B135695AC00011542 /* Disluncho */,
+				286877C1135695AC00011542 /* DislunchoTests */,
+				28687794135695AC00011542 /* Frameworks */,
+				28687792135695AC00011542 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28687792135695AC00011542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28687791135695AC00011542 /* Disluncho.app */,
+				286877BB135695AC00011542 /* DislunchoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28687794135695AC00011542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28687795135695AC00011542 /* UIKit.framework */,
+				28687797135695AC00011542 /* Foundation.framework */,
+				28687799135695AC00011542 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2868779B135695AC00011542 /* Disluncho */ = {
+			isa = PBXGroup;
+			children = (
+				286877A4135695AC00011542 /* DislunchoAppDelegate.h */,
+				286877A5135695AC00011542 /* DislunchoAppDelegate.m */,
+				286877A7135695AC00011542 /* MainWindow.xib */,
+				286877AA135695AC00011542 /* FirstViewController.h */,
+				286877AB135695AC00011542 /* FirstViewController.m */,
+				286877AD135695AC00011542 /* SecondViewController.h */,
+				286877AE135695AC00011542 /* SecondViewController.m */,
+				286877B0135695AC00011542 /* FirstView.xib */,
+				286877B3135695AC00011542 /* SecondView.xib */,
+				2868779C135695AC00011542 /* Supporting Files */,
+			);
+			path = Disluncho;
+			sourceTree = "<group>";
+		};
+		2868779C135695AC00011542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2868779D135695AC00011542 /* Disluncho-Info.plist */,
+				2868779E135695AC00011542 /* InfoPlist.strings */,
+				286877A1135695AC00011542 /* Disluncho-Prefix.pch */,
+				286877A2135695AC00011542 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		286877C1135695AC00011542 /* DislunchoTests */ = {
+			isa = PBXGroup;
+			children = (
+				286877C8135695AC00011542 /* DislunchoTests.h */,
+				286877CA135695AC00011542 /* DislunchoTests.m */,
+				286877C2135695AC00011542 /* Supporting Files */,
+			);
+			path = DislunchoTests;
+			sourceTree = "<group>";
+		};
+		286877C2135695AC00011542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				286877C3135695AC00011542 /* DislunchoTests-Info.plist */,
+				286877C4135695AC00011542 /* InfoPlist.strings */,
+				286877C7135695AC00011542 /* DislunchoTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28687790135695AC00011542 /* Disluncho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286877CE135695AC00011542 /* Build configuration list for PBXNativeTarget "Disluncho" */;
+			buildPhases = (
+				2868778D135695AC00011542 /* Sources */,
+				2868778E135695AC00011542 /* Frameworks */,
+				2868778F135695AC00011542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Disluncho;
+			productName = Disluncho;
+			productReference = 28687791135695AC00011542 /* Disluncho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		286877BA135695AC00011542 /* DislunchoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286877D1135695AC00011542 /* Build configuration list for PBXNativeTarget "DislunchoTests" */;
+			buildPhases = (
+				286877B6135695AC00011542 /* Sources */,
+				286877B7135695AC00011542 /* Frameworks */,
+				286877B8135695AC00011542 /* Resources */,
+				286877B9135695AC00011542 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				286877C0135695AC00011542 /* PBXTargetDependency */,
+			);
+			name = DislunchoTests;
+			productName = DislunchoTests;
+			productReference = 286877BB135695AC00011542 /* DislunchoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28687788135695AC00011542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = NYU;
+			};
+			buildConfigurationList = 2868778B135695AC00011542 /* Build configuration list for PBXProject "Disluncho" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28687786135695AC00011542;
+			productRefGroup = 28687792135695AC00011542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28687790135695AC00011542 /* Disluncho */,
+				286877BA135695AC00011542 /* DislunchoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2868778F135695AC00011542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286877A0135695AC00011542 /* InfoPlist.strings in Resources */,
+				286877A9135695AC00011542 /* MainWindow.xib in Resources */,
+				286877B2135695AC00011542 /* FirstView.xib in Resources */,
+				286877B5135695AC00011542 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286877B8135695AC00011542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286877C6135695AC00011542 /* InfoPlist.strings in Resources */,
+				286877C9135695AC00011542 /* DislunchoTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		286877B9135695AC00011542 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2868778D135695AC00011542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286877A3135695AC00011542 /* main.m in Sources */,
+				286877A6135695AC00011542 /* DislunchoAppDelegate.m in Sources */,
+				286877AC135695AC00011542 /* FirstViewController.m in Sources */,
+				286877AF135695AC00011542 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286877B6135695AC00011542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286877CB135695AC00011542 /* DislunchoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		286877C0135695AC00011542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28687790135695AC00011542 /* Disluncho */;
+			targetProxy = 286877BF135695AC00011542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2868779E135695AC00011542 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2868779F135695AC00011542 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		286877A7135695AC00011542 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877A8135695AC00011542 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		286877B0135695AC00011542 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877B1135695AC00011542 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		286877B3135695AC00011542 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877B4135695AC00011542 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		286877C4135695AC00011542 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877C5135695AC00011542 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		286877CC135695AC00011542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		286877CD135695AC00011542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		286877CF135695AC00011542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Disluncho/Disluncho-Prefix.pch";
+				INFOPLIST_FILE = "Disluncho/Disluncho-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		286877D0135695AC00011542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Disluncho/Disluncho-Prefix.pch";
+				INFOPLIST_FILE = "Disluncho/Disluncho-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		286877D2135695AC00011542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Disluncho.app/Disluncho";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DislunchoTests/DislunchoTests-Prefix.pch";
+				INFOPLIST_FILE = "DislunchoTests/DislunchoTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		286877D3135695AC00011542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Disluncho.app/Disluncho";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DislunchoTests/DislunchoTests-Prefix.pch";
+				INFOPLIST_FILE = "DislunchoTests/DislunchoTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2868778B135695AC00011542 /* Build configuration list for PBXProject "Disluncho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286877CC135695AC00011542 /* Debug */,
+				286877CD135695AC00011542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286877CE135695AC00011542 /* Build configuration list for PBXNativeTarget "Disluncho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286877CF135695AC00011542 /* Debug */,
+				286877D0135695AC00011542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		286877D1135695AC00011542 /* Build configuration list for PBXNativeTarget "DislunchoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286877D2135695AC00011542 /* Debug */,
+				286877D3135695AC00011542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28687788135695AC00011542 /* Project object */;
+}
