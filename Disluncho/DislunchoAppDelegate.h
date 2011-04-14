@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DislunchoAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-
+@interface DislunchoAppDelegate : NSObject <UIApplicationDelegate, UIApplicationDelegate, UITabBarControllerDelegate> {
+    IBOutlet UIButton *signinButton;
+    
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet UIButton *signinButton;
 
+
+-(IBAction) showWarning:(id)sender; 
 @end

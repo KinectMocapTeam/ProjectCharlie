@@ -1,23 +1,23 @@
 //
 //  SecondViewController.m
-//  Disluncho
+//  Tester
 //
 //  Created by Paige Ponzeka on 4/13/11.
 //  Copyright 2011 NYU. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "ProfileViewController.h"
 
 
-@implementation SecondViewController
+@implementation ProfileViewController
 
 /*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void)viewDidLoad
+ {
+ [super viewDidLoad];
+ }
+ */
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -38,7 +38,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-
+    
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

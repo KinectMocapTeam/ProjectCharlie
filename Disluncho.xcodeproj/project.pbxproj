@@ -14,16 +14,19 @@
 		286877A3135695AC00011542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877A2135695AC00011542 /* main.m */; };
 		286877A6135695AC00011542 /* DislunchoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877A5135695AC00011542 /* DislunchoAppDelegate.m */; };
 		286877A9135695AC00011542 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877A7135695AC00011542 /* MainWindow.xib */; };
-		286877AC135695AC00011542 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877AB135695AC00011542 /* FirstViewController.m */; };
-		286877AF135695AC00011542 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877AE135695AC00011542 /* SecondViewController.m */; };
-		286877B2135695AC00011542 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877B0135695AC00011542 /* FirstView.xib */; };
-		286877B5135695AC00011542 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877B3135695AC00011542 /* SecondView.xib */; };
+		286877AC135695AC00011542 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877AB135695AC00011542 /* VoteViewController.m */; };
+		286877AF135695AC00011542 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877AE135695AC00011542 /* ProfileViewController.m */; };
+		286877B2135695AC00011542 /* VoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877B0135695AC00011542 /* VoteView.xib */; };
+		286877B5135695AC00011542 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877B3135695AC00011542 /* ProfileView.xib */; };
 		286877BC135695AC00011542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687795135695AC00011542 /* UIKit.framework */; };
 		286877BD135695AC00011542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687797135695AC00011542 /* Foundation.framework */; };
 		286877BE135695AC00011542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28687799135695AC00011542 /* CoreGraphics.framework */; };
 		286877C6135695AC00011542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286877C4135695AC00011542 /* InfoPlist.strings */; };
 		286877C9135695AC00011542 /* DislunchoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 286877C8135695AC00011542 /* DislunchoTests.h */; };
 		286877CB135695AC00011542 /* DislunchoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877CA135695AC00011542 /* DislunchoTests.m */; };
+		286877D8135695BE00011542 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 286877D5135695BE00011542 /* profile.png */; };
+		286877D9135695BE00011542 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 286877D6135695BE00011542 /* trophy.png */; };
+		286877DB135695DA00011542 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 286877DA135695DA00011542 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,25 +44,28 @@
 		28687795135695AC00011542 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28687797135695AC00011542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28687799135695AC00011542 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2868779D135695AC00011542 /* Disluncho-Info.plist */ = {isa = PBXFileReference; path = "Disluncho-Info.plist"; sourceTree = "<group>"; };
+		2868779D135695AC00011542 /* Disluncho-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Disluncho-Info.plist"; sourceTree = "<group>"; };
 		2868779F135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		286877A1135695AC00011542 /* Disluncho-Prefix.pch */ = {isa = PBXFileReference; path = "Disluncho-Prefix.pch"; sourceTree = "<group>"; };
+		286877A1135695AC00011542 /* Disluncho-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Disluncho-Prefix.pch"; sourceTree = "<group>"; };
 		286877A2135695AC00011542 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		286877A4135695AC00011542 /* DislunchoAppDelegate.h */ = {isa = PBXFileReference; path = DislunchoAppDelegate.h; sourceTree = "<group>"; };
+		286877A4135695AC00011542 /* DislunchoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DislunchoAppDelegate.h; sourceTree = "<group>"; };
 		286877A5135695AC00011542 /* DislunchoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DislunchoAppDelegate.m; sourceTree = "<group>"; };
 		286877A8135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		286877AA135695AC00011542 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		286877AB135695AC00011542 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		286877AD135695AC00011542 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		286877AE135695AC00011542 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		286877B1135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
-		286877B4135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		286877AA135695AC00011542 /* VoteViewController.h */ = {isa = PBXFileReference; path = VoteViewController.h; sourceTree = "<group>"; };
+		286877AB135695AC00011542 /* VoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoteViewController.m; sourceTree = "<group>"; };
+		286877AD135695AC00011542 /* ProfileViewController.h */ = {isa = PBXFileReference; path = ProfileViewController.h; sourceTree = "<group>"; };
+		286877AE135695AC00011542 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		286877B1135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VoteView.xib; sourceTree = "<group>"; };
+		286877B4135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ProfileView.xib; sourceTree = "<group>"; };
 		286877BB135695AC00011542 /* DislunchoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DislunchoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		286877C3135695AC00011542 /* DislunchoTests-Info.plist */ = {isa = PBXFileReference; path = "DislunchoTests-Info.plist"; sourceTree = "<group>"; };
+		286877C3135695AC00011542 /* DislunchoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DislunchoTests-Info.plist"; sourceTree = "<group>"; };
 		286877C5135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		286877C7135695AC00011542 /* DislunchoTests-Prefix.pch */ = {isa = PBXFileReference; path = "DislunchoTests-Prefix.pch"; sourceTree = "<group>"; };
+		286877C7135695AC00011542 /* DislunchoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DislunchoTests-Prefix.pch"; sourceTree = "<group>"; };
 		286877C8135695AC00011542 /* DislunchoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DislunchoTests.h; sourceTree = "<group>"; };
 		286877CA135695AC00011542 /* DislunchoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DislunchoTests.m; sourceTree = "<group>"; };
+		286877D5135695BE00011542 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		286877D6135695BE00011542 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		286877DA135695DA00011542 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		28687786135695AC00011542 = {
 			isa = PBXGroup;
 			children = (
+				286877DA135695DA00011542 /* icon.png */,
 				2868779B135695AC00011542 /* Disluncho */,
 				286877C1135695AC00011542 /* DislunchoTests */,
 				28687794135695AC00011542 /* Frameworks */,
@@ -121,12 +128,12 @@
 				286877A4135695AC00011542 /* DislunchoAppDelegate.h */,
 				286877A5135695AC00011542 /* DislunchoAppDelegate.m */,
 				286877A7135695AC00011542 /* MainWindow.xib */,
-				286877AA135695AC00011542 /* FirstViewController.h */,
-				286877AB135695AC00011542 /* FirstViewController.m */,
-				286877AD135695AC00011542 /* SecondViewController.h */,
-				286877AE135695AC00011542 /* SecondViewController.m */,
-				286877B0135695AC00011542 /* FirstView.xib */,
-				286877B3135695AC00011542 /* SecondView.xib */,
+				286877AA135695AC00011542 /* VoteViewController.h */,
+				286877AB135695AC00011542 /* VoteViewController.m */,
+				286877AD135695AC00011542 /* ProfileViewController.h */,
+				286877AE135695AC00011542 /* ProfileViewController.m */,
+				286877B0135695AC00011542 /* VoteView.xib */,
+				286877B3135695AC00011542 /* ProfileView.xib */,
 				2868779C135695AC00011542 /* Supporting Files */,
 			);
 			path = Disluncho;
@@ -135,6 +142,8 @@
 		2868779C135695AC00011542 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				286877D5135695BE00011542 /* profile.png */,
+				286877D6135695BE00011542 /* trophy.png */,
 				2868779D135695AC00011542 /* Disluncho-Info.plist */,
 				2868779E135695AC00011542 /* InfoPlist.strings */,
 				286877A1135695AC00011542 /* Disluncho-Prefix.pch */,
@@ -235,8 +244,11 @@
 			files = (
 				286877A0135695AC00011542 /* InfoPlist.strings in Resources */,
 				286877A9135695AC00011542 /* MainWindow.xib in Resources */,
-				286877B2135695AC00011542 /* FirstView.xib in Resources */,
-				286877B5135695AC00011542 /* SecondView.xib in Resources */,
+				286877B2135695AC00011542 /* VoteView.xib in Resources */,
+				286877B5135695AC00011542 /* ProfileView.xib in Resources */,
+				286877D8135695BE00011542 /* profile.png in Resources */,
+				286877D9135695BE00011542 /* trophy.png in Resources */,
+				286877DB135695DA00011542 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +286,8 @@
 			files = (
 				286877A3135695AC00011542 /* main.m in Sources */,
 				286877A6135695AC00011542 /* DislunchoAppDelegate.m in Sources */,
-				286877AC135695AC00011542 /* FirstViewController.m in Sources */,
-				286877AF135695AC00011542 /* SecondViewController.m in Sources */,
+				286877AC135695AC00011542 /* VoteViewController.m in Sources */,
+				286877AF135695AC00011542 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,20 +326,20 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		286877B0135695AC00011542 /* FirstView.xib */ = {
+		286877B0135695AC00011542 /* VoteView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				286877B1135695AC00011542 /* en */,
 			);
-			name = FirstView.xib;
+			name = VoteView.xib;
 			sourceTree = "<group>";
 		};
-		286877B3135695AC00011542 /* SecondView.xib */ = {
+		286877B3135695AC00011542 /* ProfileView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				286877B4135695AC00011542 /* en */,
 			);
-			name = SecondView.xib;
+			name = ProfileView.xib;
 			sourceTree = "<group>";
 		};
 		286877C4135695AC00011542 /* InfoPlist.strings */ = {
