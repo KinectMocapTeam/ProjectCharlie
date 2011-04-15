@@ -29,6 +29,13 @@
 		286877351356901500011542 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 286877341356901500011542 /* icon.png */; };
 		28DF420D1358D70600A4466E /* CreateVoteGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */; };
 		28DF420F1358D72200A4466E /* CreateVoteGeneral.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF420E1358D72200A4466E /* CreateVoteGeneral.xib */; };
+		28DF422A1358DEF500A4466E /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42271358DEF500A4466E /* destination.png */; };
+		28DF422B1358DEF500A4466E /* general.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42281358DEF500A4466E /* general.png */; };
+		28DF422C1358DEF500A4466E /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42291358DEF500A4466E /* users.png */; };
+		28DF422E1358E00F00A4466E /* CreateVoteUsers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */; };
+		28DF42311358E03900A4466E /* CreateVoteUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF42301358E03800A4466E /* CreateVoteUsersViewController.m */; };
+		28DF42331358E16800A4466E /* CreateVoteDestinations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42321358E16800A4466E /* CreateVoteDestinations.xib */; };
+		28DF42361358E18000A4466E /* CreateVoteDestinationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,15 @@
 		28DF420B1358D70500A4466E /* CreateVoteGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateVoteGeneralViewController.h; path = Tester.xcodeproj/CreateVoteGeneralViewController.h; sourceTree = SOURCE_ROOT; };
 		28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateVoteGeneralViewController.m; path = Tester.xcodeproj/CreateVoteGeneralViewController.m; sourceTree = SOURCE_ROOT; };
 		28DF420E1358D72200A4466E /* CreateVoteGeneral.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateVoteGeneral.xib; path = Tester.xcodeproj/CreateVoteGeneral.xib; sourceTree = SOURCE_ROOT; };
+		28DF42271358DEF500A4466E /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination.png; sourceTree = "<group>"; };
+		28DF42281358DEF500A4466E /* general.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general.png; sourceTree = "<group>"; };
+		28DF42291358DEF500A4466E /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
+		28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateVoteUsers.xib; sourceTree = "<group>"; };
+		28DF422F1358E03800A4466E /* CreateVoteUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateVoteUsersViewController.h; sourceTree = "<group>"; };
+		28DF42301358E03800A4466E /* CreateVoteUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateVoteUsersViewController.m; sourceTree = "<group>"; };
+		28DF42321358E16800A4466E /* CreateVoteDestinations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateVoteDestinations.xib; sourceTree = "<group>"; };
+		28DF42341358E17F00A4466E /* CreateVoteDestinationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateVoteDestinationsViewController.h; sourceTree = "<group>"; };
+		28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateVoteDestinationsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +153,13 @@
 				286876FF1356598700011542 /* VoteViewController.m */,
 				286877011356598700011542 /* ProfileViewController.h */,
 				286877021356598700011542 /* ProfileViewController.m */,
+				28DF422F1358E03800A4466E /* CreateVoteUsersViewController.h */,
+				28DF42301358E03800A4466E /* CreateVoteUsersViewController.m */,
+				28DF42341358E17F00A4466E /* CreateVoteDestinationsViewController.h */,
+				28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */,
 				286876FB1356598700011542 /* MainWindow.xib */,
+				28DF42321358E16800A4466E /* CreateVoteDestinations.xib */,
+				28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */,
 				28DF420E1358D72200A4466E /* CreateVoteGeneral.xib */,
 				286877041356598700011542 /* VoteView.xib */,
 				286877071356598700011542 /* ProfileView.xib */,
@@ -173,6 +195,9 @@
 		286877161356598700011542 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28DF42271358DEF500A4466E /* destination.png */,
+				28DF42281358DEF500A4466E /* general.png */,
+				28DF42291358DEF500A4466E /* users.png */,
 				286877171356598700011542 /* TesterTests-Info.plist */,
 				286877181356598700011542 /* InfoPlist.strings */,
 				2868771B1356598700011542 /* TesterTests-Prefix.pch */,
@@ -258,6 +283,11 @@
 				2868773313568FF700011542 /* trophy.png in Resources */,
 				286877351356901500011542 /* icon.png in Resources */,
 				28DF420F1358D72200A4466E /* CreateVoteGeneral.xib in Resources */,
+				28DF422A1358DEF500A4466E /* destination.png in Resources */,
+				28DF422B1358DEF500A4466E /* general.png in Resources */,
+				28DF422C1358DEF500A4466E /* users.png in Resources */,
+				28DF422E1358E00F00A4466E /* CreateVoteUsers.xib in Resources */,
+				28DF42331358E16800A4466E /* CreateVoteDestinations.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +328,8 @@
 				286877001356598700011542 /* VoteViewController.m in Sources */,
 				286877031356598700011542 /* ProfileViewController.m in Sources */,
 				28DF420D1358D70600A4466E /* CreateVoteGeneralViewController.m in Sources */,
+				28DF42311358E03900A4466E /* CreateVoteUsersViewController.m in Sources */,
+				28DF42361358E18000A4466E /* CreateVoteDestinationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
