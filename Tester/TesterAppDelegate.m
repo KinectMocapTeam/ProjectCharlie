@@ -13,7 +13,6 @@
 
 
 @synthesize window=_window;
-
 @synthesize tabBarController=_tabBarController;
 @synthesize createVoteTabBarController= __createVoteTabBarController;
 @synthesize signinButton=_signinButton;
@@ -88,11 +87,9 @@
 -(IBAction) showWarning:(id)sender
 {
            //switch to the user profile screen
-        NSLog(@"Switching to USer profile Screen");
-    NSLog(@"Button Pressed");
     NSString *given_username= [login_username text];
     NSString *given_password= [login_password text];
-    NSLog(@"Username: %@, Password: %@", given_username, given_password);
+    NSLog(@"Logging into Username: %@, Password: %@", given_username, given_password);
     //run the SQL code to get the user info
     
     //the results from the current SQL query
@@ -119,6 +116,12 @@
     [_window release];
     [_tabBarController release];
     [super dealloc];
+}
+/*Called when the user pressed the setLogout Button, 
+ Brings the main signin window forward*/
+-(void) setLogout
+{
+    self.window = _window;
 }
 
 /*

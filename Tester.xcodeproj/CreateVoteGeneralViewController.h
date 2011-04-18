@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TesterAppDelegate.h"
 
 @interface CreateVoteGeneralViewController : UIViewController {
     

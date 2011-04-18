@@ -40,4 +40,5 @@
 
 -(IBAction) showWarning:(id)sender; 
 -(IBAction) logOut:(id)sender;
+-(void) setLogout;
 @end

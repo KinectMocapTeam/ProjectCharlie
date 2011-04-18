@@ -7,7 +7,7 @@
 //
 
 #import "CreateVoteDestinationsViewController.h"
-
+#import "TesterAppDelegate.h"
 
 @implementation CreateVoteDestinationsViewController
 
@@ -25,6 +25,14 @@
     [super dealloc];
 }
 
+/*Logouts a user and brings forward the main signin window from the app delegate*/
+-(IBAction) goBack: (id)sender
+{
+    NSLog(@"Going Back");
+    TesterAppDelegate* app = (TesterAppDelegate*)[UIApplication sharedApplication].delegate;
+    app.window.rootViewController = app.tabBarController;
+    [app release];
+}
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.

@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CreateVoteUsersViewController : UIViewController {
-    
+@interface CreateVoteUsersViewController : UITableViewController {
+    NSMutableArray *userNames;
 }
 
+@property (nonatomic, retain) NSMutableArray *userNames;
+-(IBAction) goBack: (id)sender;
 @end

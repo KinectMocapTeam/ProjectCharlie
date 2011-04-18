@@ -12,5 +12,5 @@
 @interface CreateVoteDestinationsViewController : UIViewController {
     
 }
-
+-(IBAction) goBack: (id)sender;
 @end

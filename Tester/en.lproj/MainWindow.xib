@@ -82,7 +82,7 @@
 					<object class="IBUIButton" id="380754008">
 						<reference key="NSNextResponder" ref="380026005"/>
 						<int key="NSvFlags">1316</int>
-						<string key="NSFrame">{{36, 383}, {248, 34}}</string>
+						<string key="NSFrame">{{30, 352}, {248, 34}}</string>
 						<reference key="NSSuperview" ref="380026005"/>
 						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -102,7 +102,7 @@
 						</object>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+							<bytes key="NSRGB">MC4zNTg2OTU2NTIyIDAgMC4wMjUzMjYyNzMyNgA</bytes>
 						</object>
 						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
@@ -457,10 +457,10 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="834335576"/>
 							<reference ref="198575434"/>
-							<reference ref="380754008"/>
 							<reference ref="357502410"/>
 							<reference ref="413518604"/>
 							<reference ref="371125829"/>
+							<reference ref="380754008"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
