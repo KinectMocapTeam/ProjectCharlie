@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28295A4C135BDC5F00EB7367 /* CreateVoteGeneral.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28295A4B135BDC5F00EB7367 /* CreateVoteGeneral.xib */; };
 		286876EA1356598700011542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876E91356598700011542 /* UIKit.framework */; };
 		286876EC1356598700011542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876EB1356598700011542 /* Foundation.framework */; };
 		286876EE1356598700011542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876ED1356598700011542 /* CoreGraphics.framework */; };
@@ -28,7 +29,6 @@
 		2868773313568FF700011542 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868773113568FF700011542 /* trophy.png */; };
 		286877351356901500011542 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 286877341356901500011542 /* icon.png */; };
 		28DF420D1358D70600A4466E /* CreateVoteGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */; };
-		28DF420F1358D72200A4466E /* CreateVoteGeneral.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF420E1358D72200A4466E /* CreateVoteGeneral.xib */; };
 		28DF422A1358DEF500A4466E /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42271358DEF500A4466E /* destination.png */; };
 		28DF422B1358DEF500A4466E /* general.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42281358DEF500A4466E /* general.png */; };
 		28DF422C1358DEF500A4466E /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42291358DEF500A4466E /* users.png */; };
@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28295A4B135BDC5F00EB7367 /* CreateVoteGeneral.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateVoteGeneral.xib; path = Tester.xcodeproj/CreateVoteGeneral.xib; sourceTree = SOURCE_ROOT; };
 		286876E51356598700011542 /* Disluncho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disluncho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286876E91356598700011542 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		286876EB1356598700011542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,7 +78,6 @@
 		286877341356901500011542 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		28DF420B1358D70500A4466E /* CreateVoteGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateVoteGeneralViewController.h; path = Tester.xcodeproj/CreateVoteGeneralViewController.h; sourceTree = SOURCE_ROOT; };
 		28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateVoteGeneralViewController.m; path = Tester.xcodeproj/CreateVoteGeneralViewController.m; sourceTree = SOURCE_ROOT; };
-		28DF420E1358D72200A4466E /* CreateVoteGeneral.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateVoteGeneral.xib; path = Tester.xcodeproj/CreateVoteGeneral.xib; sourceTree = SOURCE_ROOT; };
 		28DF42271358DEF500A4466E /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination.png; sourceTree = "<group>"; };
 		28DF42281358DEF500A4466E /* general.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general.png; sourceTree = "<group>"; };
 		28DF42291358DEF500A4466E /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
@@ -158,9 +158,9 @@
 				28DF42341358E17F00A4466E /* CreateVoteDestinationsViewController.h */,
 				28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */,
 				286876FB1356598700011542 /* MainWindow.xib */,
+				28295A4B135BDC5F00EB7367 /* CreateVoteGeneral.xib */,
 				28DF42321358E16800A4466E /* CreateVoteDestinations.xib */,
 				28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */,
-				28DF420E1358D72200A4466E /* CreateVoteGeneral.xib */,
 				286877041356598700011542 /* VoteView.xib */,
 				286877071356598700011542 /* ProfileView.xib */,
 				286876F01356598700011542 /* Supporting Files */,
@@ -282,12 +282,12 @@
 				2868773213568FF700011542 /* profile.png in Resources */,
 				2868773313568FF700011542 /* trophy.png in Resources */,
 				286877351356901500011542 /* icon.png in Resources */,
-				28DF420F1358D72200A4466E /* CreateVoteGeneral.xib in Resources */,
 				28DF422A1358DEF500A4466E /* destination.png in Resources */,
 				28DF422B1358DEF500A4466E /* general.png in Resources */,
 				28DF422C1358DEF500A4466E /* users.png in Resources */,
 				28DF422E1358E00F00A4466E /* CreateVoteUsers.xib in Resources */,
 				28DF42331358E16800A4466E /* CreateVoteDestinations.xib in Resources */,
+				28295A4C135BDC5F00EB7367 /* CreateVoteGeneral.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

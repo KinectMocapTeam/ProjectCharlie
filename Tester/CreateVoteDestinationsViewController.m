@@ -10,7 +10,7 @@
 #import "TesterAppDelegate.h"
 
 @implementation CreateVoteDestinationsViewController
-
+@synthesize destinationNames;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -50,19 +50,73 @@
 }
 */
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+-(void) viewDidLoad
+{
+    //load the usernames
+    destinationNames= [[NSMutableArray alloc] initWithCapacity:15]; 
+    [destinationNames addObject:@"Chipotle"];
+    [destinationNames addObject:@"Lenny's"];
+    [destinationNames addObject:@"Johnny Rocket's"];
+    [destinationNames addObject:@"Subway"];
+    [destinationNames addObject:@"Toss'd"];
+    [destinationNames addObject:@"Pressed"];
+    [destinationNames addObject:@"No.7 Sub"];
+    [destinationNames addObject:@"Shake Shack"];
+    [destinationNames addObject:@"Five Guys"];
+    
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	// There is only one section.
+	return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	// Return the number of time zone names.
+	return [destinationNames count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *MyIdentifier = @"MyIdentifier";
+	
+	// Try to retrieve from the table view a now-unused cell with the given identifier.
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+	
+	// If no cell is available, create a new one using the given identifier.
+	if (cell == nil) {
+		// Use the default cell style.
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier] autorelease];
+	}
+	
+	// Set up the cell with the usernames
+	cell.textLabel.text = [destinationNames objectAtIndex:indexPath.row];
+    
+	return cell;
+}
+
+/*
+ To conform to Human Interface Guildelines, since selecting a row would have no effect (such as navigation), make sure that rows cannot be selected.
+ */
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    
+    //give a check mark to selected rows
+    if (cell.accessoryType == UITableViewCellAccessoryNone)
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	else
+		cell.accessoryType = UITableViewCellAccessoryNone;
+    
+	[tableView deselectRowAtIndexPath:indexPath animated:NO];
+	return indexPath;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

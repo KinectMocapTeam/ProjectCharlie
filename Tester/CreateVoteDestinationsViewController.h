@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CreateVoteDestinationsViewController : UIViewController {
-    
+@interface CreateVoteDestinationsViewController : UITableViewController {
+    NSMutableArray *destinationNames;
 }
+
+@property (nonatomic, retain) NSMutableArray *destinationNames;
 -(IBAction) goBack: (id)sender;
 @end
