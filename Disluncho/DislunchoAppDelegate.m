@@ -10,7 +10,9 @@
 
 @implementation DislunchoAppDelegate
 
-
+@synthesize UserUNID;
+@synthesize usernameInput;
+@synthesize passwordInput;
 @synthesize window=_window;
 
 @synthesize tabBarController=_tabBarController;
@@ -62,22 +64,109 @@
      See also applicationDidEnterBackground:.
      */
 }
+/*
+ *will return 2D array of results[row,field] 
+ *must send parameters as (@"action=____&otherParamName=___& ...")
+ *all queries are therefore created and stored in the php file and called by their action= parameter
+ *
+ */
+-(NSMutableArray*)sendAndRetrieve:(NSString *)parameters
+{
+	//set up urlRequest
+	NSData *parametersData = [parameters dataUsingEncoding:NSISOLatin1StringEncoding allowLossyConversion:NO];
+	NSMutableURLRequest *urlRequest = [[[NSMutableURLRequest alloc] 
+										initWithURL:[NSURL URLWithString:@"http://ponzeka.com/iphone_disluncho/disluncho_test.php"]]
+									   autorelease];
+	[urlRequest setHTTPMethod:@"POST"];
+	[urlRequest setHTTPBody:parametersData];
+	
+	//variables to store retrieved data
+	NSData *urlData; 
+	NSURLResponse *response; 
+	NSError *error;
+	
+	//connect to url and get response
+	urlData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error]; 
+	
+	//check for errors
+	if(!urlData) NSLog(@"Connection Failed!");
+
+	//turn response String stripped of \n characters
+	NSString *urlString = [[[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding] 
+							stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]] ; 
+	
+
+	NSMutableArray *returnValues = [NSMutableArray arrayWithCapacity:100];
+	
+
+	//make string into 2D array [rows, fields]
+	[returnValues setArray:[urlString componentsSeparatedByString:@"|"]];
+	for(int row=0; row< [returnValues count]; row++){
+		[returnValues replaceObjectAtIndex:row withObject:
+		[[returnValues objectAtIndex:row] componentsSeparatedByString:@","]];
+	}
+	
+	//print out return string size, row and fields
+	NSLog(@"returned string = %@\n",urlString);
+	NSLog(@"returned array of size = [ %i , %i ]\n",[returnValues count], [[returnValues objectAtIndex:0]count]);
+	for(int j = 0; j<[returnValues count]; j++){
+		NSString* fields = [NSString  stringWithString:@""];
+		for(int k = 0; k<[[returnValues objectAtIndex:0]count]; k++){
+			fields = [fields stringByAppendingString:[@"[" stringByAppendingString:
+													  [[[returnValues objectAtIndex:j]objectAtIndex:k] 
+													   stringByAppendingString:@"]"]]];
+		}
+		NSLog(@"[%i]- %@ ",j,fields);
+	}
+	
+	//Array of size [1,1] will be "" if there was no results, remove blank object for logic
+	if (NSOrderedSame == [[[returnValues objectAtIndex:0]objectAtIndex:0] compare:@""]){
+		[returnValues removeLastObject];
+	}
+	return returnValues;
+}
 
 -(IBAction) showWarning:(id)sender
 {
-    //switch to the user profile screen
-    NSLog(@"Switching to USer profile Screen");
-    
-    self.window.rootViewController = self.tabBarController;
+	//things query will retrieve
+	const int User_UNID = 0;
+	
+	//set up params for login query
+	NSString *login = [[[[@"action=LOGIN" 
+						stringByAppendingString:@"&username=" ] stringByAppendingString:usernameInput.text]
+							 stringByAppendingString:@"&password="] stringByAppendingString:passwordInput.text];
+	
+	//create array and populate it with results from query
+	NSMutableArray *user = [NSMutableArray arrayWithCapacity:100];
+	[user setArray:[self sendAndRetrieve:login]];
+
+	
+	if([user count] == 0){
+		NSLog(@"no record of that username and/or password");
+		//set a warning for the user to try again
+	}
+	else{
+		//set local user id  		
+		UserUNID =  [[[user objectAtIndex:0] objectAtIndex:User_UNID] intValue];
+		
+		//switch to the user profile screen
+		NSLog(@"Switching to User profile Screen for user #%i",UserUNID);
+		self.window.rootViewController = self.tabBarController;
+	}
+	
 }
 
 - (void)dealloc
-{
+{	
     [_window release];
     [_tabBarController release];
-    [super dealloc];
+	[super dealloc];
 }
-
+-(BOOL)textFieldShouldReturn:(UITextField *)theTextField
+{
+	[theTextField resignFirstResponder];
+	return TRUE;
+}
 /*
  // Optional UITabBarControllerDelegate method.
  - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController

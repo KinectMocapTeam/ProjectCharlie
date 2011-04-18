@@ -51,9 +51,9 @@
 		286877A4135695AC00011542 /* DislunchoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DislunchoAppDelegate.h; sourceTree = "<group>"; };
 		286877A5135695AC00011542 /* DislunchoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DislunchoAppDelegate.m; sourceTree = "<group>"; };
 		286877A8135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		286877AA135695AC00011542 /* VoteViewController.h */ = {isa = PBXFileReference; path = VoteViewController.h; sourceTree = "<group>"; };
+		286877AA135695AC00011542 /* VoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoteViewController.h; sourceTree = "<group>"; };
 		286877AB135695AC00011542 /* VoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoteViewController.m; sourceTree = "<group>"; };
-		286877AD135695AC00011542 /* ProfileViewController.h */ = {isa = PBXFileReference; path = ProfileViewController.h; sourceTree = "<group>"; };
+		286877AD135695AC00011542 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		286877AE135695AC00011542 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		286877B1135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VoteView.xib; sourceTree = "<group>"; };
 		286877B4135695AC00011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ProfileView.xib; sourceTree = "<group>"; };
@@ -127,11 +127,11 @@
 			children = (
 				286877A4135695AC00011542 /* DislunchoAppDelegate.h */,
 				286877A5135695AC00011542 /* DislunchoAppDelegate.m */,
-				286877A7135695AC00011542 /* MainWindow.xib */,
 				286877AA135695AC00011542 /* VoteViewController.h */,
 				286877AB135695AC00011542 /* VoteViewController.m */,
 				286877AD135695AC00011542 /* ProfileViewController.h */,
 				286877AE135695AC00011542 /* ProfileViewController.m */,
+				286877A7135695AC00011542 /* MainWindow.xib */,
 				286877B0135695AC00011542 /* VoteView.xib */,
 				286877B3135695AC00011542 /* ProfileView.xib */,
 				2868779C135695AC00011542 /* Supporting Files */,
@@ -476,6 +476,7 @@
 				286877D0135695AC00011542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		286877D1135695AC00011542 /* Build configuration list for PBXNativeTarget "DislunchoTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				286877D3135695AC00011542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
