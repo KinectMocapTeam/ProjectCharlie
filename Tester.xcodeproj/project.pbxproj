@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28295A4C135BDC5F00EB7367 /* CreateVoteGeneral.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28295A4B135BDC5F00EB7367 /* CreateVoteGeneral.xib */; };
+		286876EA1356598700011542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876E91356598700011542 /* UIKit.framework */; };
+		286876EC1356598700011542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876EB1356598700011542 /* Foundation.framework */; };
+		286876EE1356598700011542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876ED1356598700011542 /* CoreGraphics.framework */; };
+		286876F41356598700011542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286876F21356598700011542 /* InfoPlist.strings */; };
+		286876F71356598700011542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 286876F61356598700011542 /* main.m */; };
+		286876FA1356598700011542 /* TesterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286876F91356598700011542 /* TesterAppDelegate.m */; };
+		286876FD1356598700011542 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286876FB1356598700011542 /* MainWindow.xib */; };
+		286877001356598700011542 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286876FF1356598700011542 /* VoteViewController.m */; };
+		286877031356598700011542 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286877021356598700011542 /* ProfileViewController.m */; };
+		286877061356598700011542 /* VoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877041356598700011542 /* VoteView.xib */; };
+		286877091356598700011542 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286877071356598700011542 /* ProfileView.xib */; };
+		286877101356598700011542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876E91356598700011542 /* UIKit.framework */; };
+		286877111356598700011542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876EB1356598700011542 /* Foundation.framework */; };
+		286877121356598700011542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286876ED1356598700011542 /* CoreGraphics.framework */; };
+		2868771A1356598700011542 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286877181356598700011542 /* InfoPlist.strings */; };
+		2868771D1356598700011542 /* TesterTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2868771C1356598700011542 /* TesterTests.h */; };
+		2868771F1356598700011542 /* TesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2868771E1356598700011542 /* TesterTests.m */; };
+		2868773213568FF700011542 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868773013568FF700011542 /* profile.png */; };
+		2868773313568FF700011542 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2868773113568FF700011542 /* trophy.png */; };
+		286877351356901500011542 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 286877341356901500011542 /* icon.png */; };
+		28DF420D1358D70600A4466E /* CreateVoteGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */; };
+		28DF422A1358DEF500A4466E /* destination.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42271358DEF500A4466E /* destination.png */; };
+		28DF422B1358DEF500A4466E /* general.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42281358DEF500A4466E /* general.png */; };
+		28DF422C1358DEF500A4466E /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42291358DEF500A4466E /* users.png */; };
+		28DF422E1358E00F00A4466E /* CreateVoteUsers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */; };
+		28DF42311358E03900A4466E /* CreateVoteUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF42301358E03800A4466E /* CreateVoteUsersViewController.m */; };
+		28DF42331358E16800A4466E /* CreateVoteDestinations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF42321358E16800A4466E /* CreateVoteDestinations.xib */; };
+		28DF42361358E18000A4466E /* CreateVoteDestinationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		286877131356598700011542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 286876DC1356598700011542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 286876E41356598700011542;
+			remoteInfo = Tester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28295A4B135BDC5F00EB7367 /* CreateVoteGeneral.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateVoteGeneral.xib; path = Tester.xcodeproj/CreateVoteGeneral.xib; sourceTree = SOURCE_ROOT; };
+		286876E51356598700011542 /* Disluncho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disluncho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		286876E91356598700011542 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		286876EB1356598700011542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		286876ED1356598700011542 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		286876F11356598700011542 /* Tester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tester-Info.plist"; sourceTree = "<group>"; };
+		286876F31356598700011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		286876F51356598700011542 /* Tester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tester-Prefix.pch"; sourceTree = "<group>"; };
+		286876F61356598700011542 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		286876F81356598700011542 /* TesterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesterAppDelegate.h; sourceTree = "<group>"; };
+		286876F91356598700011542 /* TesterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesterAppDelegate.m; sourceTree = "<group>"; };
+		286876FC1356598700011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		286876FE1356598700011542 /* VoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoteViewController.h; sourceTree = "<group>"; };
+		286876FF1356598700011542 /* VoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoteViewController.m; sourceTree = "<group>"; };
+		286877011356598700011542 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		286877021356598700011542 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		286877051356598700011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VoteView.xib; sourceTree = "<group>"; };
+		286877081356598700011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ProfileView.xib; sourceTree = "<group>"; };
+		2868770F1356598700011542 /* TesterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		286877171356598700011542 /* TesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TesterTests-Info.plist"; sourceTree = "<group>"; };
+		286877191356598700011542 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2868771B1356598700011542 /* TesterTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TesterTests-Prefix.pch"; sourceTree = "<group>"; };
+		2868771C1356598700011542 /* TesterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesterTests.h; sourceTree = "<group>"; };
+		2868771E1356598700011542 /* TesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesterTests.m; sourceTree = "<group>"; };
+		2868773013568FF700011542 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		2868773113568FF700011542 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		286877341356901500011542 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		28DF420B1358D70500A4466E /* CreateVoteGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateVoteGeneralViewController.h; path = Tester.xcodeproj/CreateVoteGeneralViewController.h; sourceTree = SOURCE_ROOT; };
+		28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateVoteGeneralViewController.m; path = Tester.xcodeproj/CreateVoteGeneralViewController.m; sourceTree = SOURCE_ROOT; };
+		28DF42271358DEF500A4466E /* destination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination.png; sourceTree = "<group>"; };
+		28DF42281358DEF500A4466E /* general.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general.png; sourceTree = "<group>"; };
+		28DF42291358DEF500A4466E /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
+		28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateVoteUsers.xib; sourceTree = "<group>"; };
+		28DF422F1358E03800A4466E /* CreateVoteUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateVoteUsersViewController.h; sourceTree = "<group>"; };
+		28DF42301358E03800A4466E /* CreateVoteUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateVoteUsersViewController.m; sourceTree = "<group>"; };
+		28DF42321358E16800A4466E /* CreateVoteDestinations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateVoteDestinations.xib; sourceTree = "<group>"; };
+		28DF42341358E17F00A4466E /* CreateVoteDestinationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateVoteDestinationsViewController.h; sourceTree = "<group>"; };
+		28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateVoteDestinationsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		286876E21356598700011542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286876EA1356598700011542 /* UIKit.framework in Frameworks */,
+				286876EC1356598700011542 /* Foundation.framework in Frameworks */,
+				286876EE1356598700011542 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2868770B1356598700011542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286877101356598700011542 /* UIKit.framework in Frameworks */,
+				286877111356598700011542 /* Foundation.framework in Frameworks */,
+				286877121356598700011542 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		286876DA1356598700011542 = {
+			isa = PBXGroup;
+			children = (
+				286876EF1356598700011542 /* Tester */,
+				286877151356598700011542 /* TesterTests */,
+				286876E81356598700011542 /* Frameworks */,
+				286876E61356598700011542 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		286876E61356598700011542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				286876E51356598700011542 /* Disluncho.app */,
+				2868770F1356598700011542 /* TesterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		286876E81356598700011542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				286876E91356598700011542 /* UIKit.framework */,
+				286876EB1356598700011542 /* Foundation.framework */,
+				286876ED1356598700011542 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		286876EF1356598700011542 /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				286876F81356598700011542 /* TesterAppDelegate.h */,
+				286876F91356598700011542 /* TesterAppDelegate.m */,
+				28DF420B1358D70500A4466E /* CreateVoteGeneralViewController.h */,
+				28DF420C1358D70600A4466E /* CreateVoteGeneralViewController.m */,
+				286876FE1356598700011542 /* VoteViewController.h */,
+				286876FF1356598700011542 /* VoteViewController.m */,
+				286877011356598700011542 /* ProfileViewController.h */,
+				286877021356598700011542 /* ProfileViewController.m */,
+				28DF422F1358E03800A4466E /* CreateVoteUsersViewController.h */,
+				28DF42301358E03800A4466E /* CreateVoteUsersViewController.m */,
+				28DF42341358E17F00A4466E /* CreateVoteDestinationsViewController.h */,
+				28DF42351358E17F00A4466E /* CreateVoteDestinationsViewController.m */,
+				286876FB1356598700011542 /* MainWindow.xib */,
+				28295A4B135BDC5F00EB7367 /* CreateVoteGeneral.xib */,
+				28DF42321358E16800A4466E /* CreateVoteDestinations.xib */,
+				28DF422D1358E00F00A4466E /* CreateVoteUsers.xib */,
+				286877041356598700011542 /* VoteView.xib */,
+				286877071356598700011542 /* ProfileView.xib */,
+				286876F01356598700011542 /* Supporting Files */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
+		286876F01356598700011542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				286877341356901500011542 /* icon.png */,
+				2868773013568FF700011542 /* profile.png */,
+				2868773113568FF700011542 /* trophy.png */,
+				286876F11356598700011542 /* Tester-Info.plist */,
+				286876F21356598700011542 /* InfoPlist.strings */,
+				286876F51356598700011542 /* Tester-Prefix.pch */,
+				286876F61356598700011542 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		286877151356598700011542 /* TesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				2868771C1356598700011542 /* TesterTests.h */,
+				2868771E1356598700011542 /* TesterTests.m */,
+				286877161356598700011542 /* Supporting Files */,
+			);
+			path = TesterTests;
+			sourceTree = "<group>";
+		};
+		286877161356598700011542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28DF42271358DEF500A4466E /* destination.png */,
+				28DF42281358DEF500A4466E /* general.png */,
+				28DF42291358DEF500A4466E /* users.png */,
+				286877171356598700011542 /* TesterTests-Info.plist */,
+				286877181356598700011542 /* InfoPlist.strings */,
+				2868771B1356598700011542 /* TesterTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		286876E41356598700011542 /* Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286877221356598700011542 /* Build configuration list for PBXNativeTarget "Tester" */;
+			buildPhases = (
+				286876E11356598700011542 /* Sources */,
+				286876E21356598700011542 /* Frameworks */,
+				286876E31356598700011542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tester;
+			productName = Tester;
+			productReference = 286876E51356598700011542 /* Disluncho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2868770E1356598700011542 /* TesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286877251356598700011542 /* Build configuration list for PBXNativeTarget "TesterTests" */;
+			buildPhases = (
+				2868770A1356598700011542 /* Sources */,
+				2868770B1356598700011542 /* Frameworks */,
+				2868770C1356598700011542 /* Resources */,
+				2868770D1356598700011542 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				286877141356598700011542 /* PBXTargetDependency */,
+			);
+			name = TesterTests;
+			productName = TesterTests;
+			productReference = 2868770F1356598700011542 /* TesterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		286876DC1356598700011542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = NYU;
+			};
+			buildConfigurationList = 286876DF1356598700011542 /* Build configuration list for PBXProject "Tester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 286876DA1356598700011542;
+			productRefGroup = 286876E61356598700011542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				286876E41356598700011542 /* Tester */,
+				2868770E1356598700011542 /* TesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		286876E31356598700011542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286876F41356598700011542 /* InfoPlist.strings in Resources */,
+				286876FD1356598700011542 /* MainWindow.xib in Resources */,
+				286877061356598700011542 /* VoteView.xib in Resources */,
+				286877091356598700011542 /* ProfileView.xib in Resources */,
+				2868773213568FF700011542 /* profile.png in Resources */,
+				2868773313568FF700011542 /* trophy.png in Resources */,
+				286877351356901500011542 /* icon.png in Resources */,
+				28DF422A1358DEF500A4466E /* destination.png in Resources */,
+				28DF422B1358DEF500A4466E /* general.png in Resources */,
+				28DF422C1358DEF500A4466E /* users.png in Resources */,
+				28DF422E1358E00F00A4466E /* CreateVoteUsers.xib in Resources */,
+				28DF42331358E16800A4466E /* CreateVoteDestinations.xib in Resources */,
+				28295A4C135BDC5F00EB7367 /* CreateVoteGeneral.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2868770C1356598700011542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2868771A1356598700011542 /* InfoPlist.strings in Resources */,
+				2868771D1356598700011542 /* TesterTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2868770D1356598700011542 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		286876E11356598700011542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286876F71356598700011542 /* main.m in Sources */,
+				286876FA1356598700011542 /* TesterAppDelegate.m in Sources */,
+				286877001356598700011542 /* VoteViewController.m in Sources */,
+				286877031356598700011542 /* ProfileViewController.m in Sources */,
+				28DF420D1358D70600A4466E /* CreateVoteGeneralViewController.m in Sources */,
+				28DF42311358E03900A4466E /* CreateVoteUsersViewController.m in Sources */,
+				28DF42361358E18000A4466E /* CreateVoteDestinationsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2868770A1356598700011542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2868771F1356598700011542 /* TesterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		286877141356598700011542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 286876E41356598700011542 /* Tester */;
+			targetProxy = 286877131356598700011542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		286876F21356598700011542 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286876F31356598700011542 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		286876FB1356598700011542 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286876FC1356598700011542 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		286877041356598700011542 /* VoteView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877051356598700011542 /* en */,
+			);
+			name = VoteView.xib;
+			sourceTree = "<group>";
+		};
+		286877071356598700011542 /* ProfileView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877081356598700011542 /* en */,
+			);
+			name = ProfileView.xib;
+			sourceTree = "<group>";
+		};
+		286877181356598700011542 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286877191356598700011542 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		286877201356598700011542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		286877211356598700011542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		286877231356598700011542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
+				INFOPLIST_FILE = "Tester/Tester-Info.plist";
+				PRODUCT_NAME = Disluncho;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		286877241356598700011542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
+				INFOPLIST_FILE = "Tester/Tester-Info.plist";
+				PRODUCT_NAME = Disluncho;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		286877261356598700011542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tester.app/Tester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TesterTests/TesterTests-Prefix.pch";
+				INFOPLIST_FILE = "TesterTests/TesterTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		286877271356598700011542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tester.app/Tester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TesterTests/TesterTests-Prefix.pch";
+				INFOPLIST_FILE = "TesterTests/TesterTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		286876DF1356598700011542 /* Build configuration list for PBXProject "Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286877201356598700011542 /* Debug */,
+				286877211356598700011542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286877221356598700011542 /* Build configuration list for PBXNativeTarget "Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286877231356598700011542 /* Debug */,
+				286877241356598700011542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286877251356598700011542 /* Build configuration list for PBXNativeTarget "TesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286877261356598700011542 /* Debug */,
+				286877271356598700011542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 286876DC1356598700011542 /* Project object */;
+}
