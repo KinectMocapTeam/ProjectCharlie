@@ -83,27 +83,114 @@
      See also applicationDidEnterBackground:.
      */
 }
-
--(IBAction) showWarning:(id)sender
+/*
+ *will return 2D array of results[row,field] 
+ *must send parameters as (@"action=____&otherParamName=___& ...")
+ *all queries are therefore created and stored in the php file and called by their action= parameter
+ *
+ */
+-(NSMutableArray*)sendAndRetrieve:(NSString *)parameters
 {
-           //switch to the user profile screen
-    NSString *given_username= [login_username text];
-    NSString *given_password= [login_password text];
-    NSLog(@"Logging into Username: %@, Password: %@", given_username, given_password);
-    //run the SQL code to get the user info
-    
-    //the results from the current SQL query
-    int sql_status = CONNECTION_SUCCESS;
-    
-    
-    //display a message to the user based on the connection results 
-    [login_feedback setText:[login_warnings objectAtIndex: sql_status]];
+	//set up urlRequest
+	NSData *parametersData = [parameters dataUsingEncoding:NSISOLatin1StringEncoding allowLossyConversion:NO];
+	NSMutableURLRequest *urlRequest = [[[NSMutableURLRequest alloc] 
+										initWithURL:[NSURL URLWithString:@"http://ponzeka.com/iphone_disluncho/disluncho_test.php"]]
+									   autorelease];
+	[urlRequest setHTTPMethod:@"POST"];
+	[urlRequest setHTTPBody:parametersData];
+	
+	//variables to store retrieved data
+	NSData *urlData; 
+	NSURLResponse *response; 
+	NSError *error;
+	
+	//connect to url and get response
+	urlData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error]; 
+	
+	/*NSLog(@"%@",error);
+	NSLog(@"%@",response);*/
+	//check for errors
+	if(!urlData) {
+		NSLog(@"Connection Failed!");
+		NSMutableArray *returnValues = [NSMutableArray arrayWithCapacity:0];
+		return returnValues;
+	}
+	//turn response into String stripped of \n characters
+	NSString *urlString = [[[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding] 
+						   stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]] ; 
+	
+	//make string into 2D array [rows, fields]
+	NSMutableArray *returnValues = [NSMutableArray arrayWithCapacity:100];
+	
+	[returnValues setArray:[urlString componentsSeparatedByString:@"|"]];
+	for(int row=0; row< [returnValues count]; row++){
+		[returnValues replaceObjectAtIndex:row withObject:
+		 [[returnValues objectAtIndex:row] componentsSeparatedByString:@","]];
+	}
+	
+	//print out return string size, row and fields
+	[self printResults:returnValues];
+	
+	//Array of size [1,1] will be "" if there was no results, remove blank object for logic
+	if (NSOrderedSame == [[[returnValues objectAtIndex:0]objectAtIndex:0] compare:@""]){
+		[returnValues removeLastObject];
+	}
+	return returnValues;
+}
+-(void)printResults:(NSMutableArray*)results{
+	NSLog(@"returned array of size = [ %i , %i ]\n",[results count], [[results objectAtIndex:0]count]);
+	for(int j = 0; j<[results count]; j++){
+		NSString* fields = [NSString  stringWithString:@""];
+		for(int k = 0; k<[[results objectAtIndex:0]count]; k++){
+			fields = [fields stringByAppendingString:[@"[" stringByAppendingString:
+													  [[[results objectAtIndex:j]objectAtIndex:k] 
+													   stringByAppendingString:@"]"]]];
+		}
+		NSLog(@"[row #%i]- %@ ",j,fields);
+	}
+}
+-(IBAction) showWarning:(id)sender
+{  
+	NSLog(@"Logging into Username: %@, Password: %@", login_username.text, login_password.text);
+
+	//things query will retrieve
+	const int User_UNID = 0;
+	
+	//set up params for login query
+	NSString *login = [[[[@"action=LOGIN" 
+						  stringByAppendingString:@"&username=" ] stringByAppendingString:login_username.text]
+						stringByAppendingString:@"&password="] stringByAppendingString:login_password.text];
+	
+	//create array and populate it with results from query
+	NSMutableArray *user = [NSMutableArray arrayWithCapacity:100];
+	[user setArray:[self sendAndRetrieve:login]];
+	
+	
+	if([user count] == 0){
+		NSLog(@"no record of that username and/or password LOGIN FAILED");
+		//set a warning for the user to try again 
+		//the results from the current SQL query
+		int sql_status = USERNAME_ERROR;
+
+		//display a message to the user based on the connection results 
+		[login_feedback setText:[login_warnings objectAtIndex: sql_status]];
+	}
+	else{
+		//set local user id  		
+		UserUNID =  [[[user objectAtIndex:0] objectAtIndex:User_UNID] intValue];
+		
+		//switch to the user profile screen
+		NSLog(@"Switching to User profile Screen for user #%i",UserUNID);
+		self.window.rootViewController = self.tabBarController;
+	}
+    /*   
+   
     
     if(sql_status == CONNECTION_SUCCESS)
     {//if the user has signed in show the user screen
         
         self.window.rootViewController = self.tabBarController;
-    }
+    }*/
 }
 
 /*Called when the user presses the logout button*/
@@ -123,7 +210,11 @@
 {
     self.window = _window;
 }
-
+-(BOOL)textFieldShouldReturn:(UITextField *)theTextField
+{
+	[theTextField resignFirstResponder];
+	return TRUE;
+}
 /*
 // Optional UITabBarControllerDelegate method.
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController

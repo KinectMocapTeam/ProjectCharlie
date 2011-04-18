@@ -27,6 +27,9 @@
     //text fields for given user login name and password
     IBOutlet UITextField *login_username;
     IBOutlet UITextField *login_password;
+	
+	//local storage of signin information
+	int UserUNID;
 
 
 }
@@ -36,9 +39,11 @@
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 @property (nonatomic, retain) IBOutlet UITabBarController *createVoteTabBarController;
 @property (nonatomic, retain) IBOutlet UIButton *signinButton;
+@property int UserUNID;
 
-
--(IBAction) showWarning:(id)sender; 
+-(IBAction) showWarning:(id)sender;
+-(NSMutableArray *) sendAndRetrieve:(NSString *)parameters;
 -(IBAction) logOut:(id)sender;
 -(void) setLogout;
+-(void) printResults:(NSMutableArray *)results;
 @end
