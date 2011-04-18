@@ -10,7 +10,8 @@
 #import "TesterAppDelegate.h"
 
 @interface CreateVoteGeneralViewController : UIViewController {
+    IBOutlet UIDatePicker *pickerView;
     
 }
-
+-(IBAction) createNewVote: (id) sender;
 @end
