@@ -1029,7 +1029,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>24</integer>
+					<integer>53</integer>
 				</dict>
 			</array>
 		</dict>
@@ -1732,7 +1732,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {880, 511}}</string>
+		<string>{{0, 0}, {880, 728}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
