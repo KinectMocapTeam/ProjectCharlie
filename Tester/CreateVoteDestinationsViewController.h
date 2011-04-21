@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TesterAppDelegate.h"
 
 @interface CreateVoteDestinationsViewController : UITableViewController {
     NSMutableArray *destinationNames;
+	int PLACE_NAME;
+	int PLACE_UNID;
+	TesterAppDelegate* root;
 }
 
 @property (nonatomic, retain) NSMutableArray *destinationNames;
+@property (nonatomic, retain) TesterAppDelegate *root;
 -(IBAction) goBack: (id)sender;
 @end

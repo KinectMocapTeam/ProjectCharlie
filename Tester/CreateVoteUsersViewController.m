@@ -11,12 +11,14 @@
 
 @implementation CreateVoteUsersViewController
 @synthesize userNames;
+@synthesize root;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
+	
     return self;
 }
 
@@ -65,22 +67,26 @@
 }
 
 - (void)viewDidLoad {
+    //set up pointer to the root
+	root = (TesterAppDelegate*)[UIApplication sharedApplication].delegate;
+
+	//index variables for sql results
+	USERNAME = 0;
+	USERID = 1;
+	
+	//title the selections
 	self.title = NSLocalizedString(@"Select users", "add them to the list");
-    
+	
+	//get all users from database --- later perhaps just users that have email/phone# in your contacts
+	NSString* allUsers = [NSString stringWithString:@"action=LIST_ALL_USERS"];
+	NSMutableArray* userValues = [root sendAndRetrieve:allUsers];
+	
     //load the usernames
     userNames= [[NSMutableArray alloc] initWithCapacity:15]; 
-    [userNames addObject:@"Paige Ponzeka"];
-    [userNames addObject:@"Has Been"];
-    [userNames addObject:@"And Will"];
-    [userNames addObject:@"Always Be"];
-    [userNames addObject:@"900 Times"];
-    [userNames addObject:@"Cooler Than"];
-    [userNames addObject:@"Liz Pelka"];
-    [userNames addObject:@"Could Ever"];
-    [userNames addObject:@"Dream To"];
-    [userNames addObject:@"Be"];
-    [userNames addObject:@"Paige Ponzeka"];
-    [userNames addObject:@"Paige Ponzeka"]; 
+	for(int user = 0; user< [userValues count]; user++){
+	    [userNames addObject:[[userValues objectAtIndex:user] objectAtIndex:USERNAME] ];
+	}
+    
 }
 
 

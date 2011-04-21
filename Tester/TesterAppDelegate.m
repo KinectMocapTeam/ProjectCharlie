@@ -16,6 +16,7 @@
 @synthesize tabBarController=_tabBarController;
 @synthesize createVoteTabBarController= __createVoteTabBarController;
 @synthesize signinButton=_signinButton;
+@synthesize UserUNID;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -32,6 +33,8 @@
     PASSWORD_ERROR = 2;
     NOINPUT_ERROR = 3;
     CONNECTION_SUCCESS = 4;
+	SENDING_DATA = 5;
+	USERNAME_OR_PASSWORD_ERROR = 6;
     
     //creating warning messages array
     login_warnings =  [[NSMutableArray alloc] init];
@@ -40,6 +43,8 @@
     [login_warnings addObject:@"Password Invalid"];
     [login_warnings addObject:@"Please Input a Username and Password"];
     [login_warnings addObject:@"Connection Successful!"];
+    [login_warnings addObject:@"Searching for your account . . ."];
+    [login_warnings addObject:@"Username or Password is Incorrect"];
 
     [self.window makeKeyAndVisible];
     return YES;
@@ -107,8 +112,6 @@
 	//connect to url and get response
 	urlData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error]; 
 	
-	/*NSLog(@"%@",error);
-	NSLog(@"%@",response);*/
 	//check for errors
 	if(!urlData) {
 		NSLog(@"Connection Failed!");
@@ -128,15 +131,21 @@
 		 [[returnValues objectAtIndex:row] componentsSeparatedByString:@","]];
 	}
 	
-	//print out return string size, row and fields
-	[self printResults:returnValues];
-	
 	//Array of size [1,1] will be "" if there was no results, remove blank object for logic
-	if (NSOrderedSame == [[[returnValues objectAtIndex:0]objectAtIndex:0] compare:@""]){
+	NSString* string = [NSString stringWithString:[[returnValues objectAtIndex:0]objectAtIndex:0]];
+	if (NSOrderedSame == [string compare:@""]){
 		[returnValues removeLastObject];
+		NSLog(@"return arry of size [0,0] - NO RESULTS");
 	}
+	else{
+	//print out return string size, row and fields
+		[self printResults:returnValues];
+	}
+	
 	return returnValues;
-}
+}/*
+  *	prints out the result array to Log 
+  */
 -(void)printResults:(NSMutableArray*)results{
 	NSLog(@"returned array of size = [ %i , %i ]\n",[results count], [[results objectAtIndex:0]count]);
 	for(int j = 0; j<[results count]; j++){
@@ -153,6 +162,11 @@
 {  
 	NSLog(@"Logging into Username: %@, Password: %@", login_username.text, login_password.text);
 
+	int sql_status = SENDING_DATA;
+	
+	//display a message to the user based on the connection results 
+	[login_feedback setText:[login_warnings objectAtIndex: sql_status]];
+	
 	//things query will retrieve
 	const int User_UNID = 0;
 	
@@ -170,7 +184,7 @@
 		NSLog(@"no record of that username and/or password LOGIN FAILED");
 		//set a warning for the user to try again 
 		//the results from the current SQL query
-		int sql_status = USERNAME_ERROR;
+		int sql_status = USERNAME_OR_PASSWORD_ERROR;
 
 		//display a message to the user based on the connection results 
 		[login_feedback setText:[login_warnings objectAtIndex: sql_status]];

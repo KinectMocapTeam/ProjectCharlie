@@ -17,6 +17,8 @@
     int PASSWORD_ERROR;
     int NOINPUT_ERROR;
     int CONNECTION_SUCCESS;
+	int SENDING_DATA;
+	int USERNAME_OR_PASSWORD_ERROR;
     
     //Array of warnings and messages for signinFeedback
     NSMutableArray *login_warnings;

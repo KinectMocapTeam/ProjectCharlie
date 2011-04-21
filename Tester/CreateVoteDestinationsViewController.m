@@ -11,6 +11,7 @@
 
 @implementation CreateVoteDestinationsViewController
 @synthesize destinationNames;
+@synthesize root;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -59,17 +60,24 @@
 }
 -(void) viewDidLoad
 {
-    //load the usernames
+	root = (TesterAppDelegate*)[UIApplication sharedApplication].delegate;
+	
+	//index variables for sql results
+	PLACE_NAME = 0;
+	PLACE_UNID = 1;
+	
+	//title the selections
+	self.title = NSLocalizedString(@"Select destinations", "add them to the list");
+	
+	//get all places from database --- later perhaps just places within a radius
+	NSString* allPlaces = [NSString stringWithString:@"action=LIST_ALL_PLACES"];
+	NSMutableArray* placeValues = [root sendAndRetrieve:allPlaces];
+	
+    //load the placenames
     destinationNames= [[NSMutableArray alloc] initWithCapacity:15]; 
-    [destinationNames addObject:@"Chipotle"];
-    [destinationNames addObject:@"Lenny's"];
-    [destinationNames addObject:@"Johnny Rocket's"];
-    [destinationNames addObject:@"Subway"];
-    [destinationNames addObject:@"Toss'd"];
-    [destinationNames addObject:@"Pressed"];
-    [destinationNames addObject:@"No.7 Sub"];
-    [destinationNames addObject:@"Shake Shack"];
-    [destinationNames addObject:@"Five Guys"];
+	for(int place = 0; place < [placeValues count];place++){
+		[destinationNames addObject:[[placeValues objectAtIndex:place] objectAtIndex:PLACE_NAME] ];
+	}
     
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
